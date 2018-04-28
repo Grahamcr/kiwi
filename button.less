@@ -1,8 +1,6 @@
 @import "global.less";
 
-.large-button {
-  height: 50px;
-  width:300px;
+.button {
   text-align: center;
   display: flex;
   align-items: center;
@@ -13,6 +11,11 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  
+  &.large {
+    height: 50px;
+    width:300px;
+  }
 }
 .disabled-button {
   background-color:#999999;
