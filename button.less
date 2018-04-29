@@ -16,44 +16,48 @@
     height: 50px;
     width:300px;
   }
+  
   &.medium {
     height: 50px;
     width:135px;
   }
-}
-.disabled-button {
-  background-color:#999999;
-}
-.advantage-button-font {
-  font-family: @advantage-font;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.advantage-blue-background-btn {
-  background-color: @advantage-blue;
-  &:hover {
-    background-color:@advantage-hover-blue;
+  
+  &.vmox {
+    background-color: @vmox-gold;
+    &:hover {
+      background-color:@vmox-hover-gold;
+    }
+    &:active {
+      border: 3px @vmox-gold solid;
+    }
+    font-family: @vmox-font;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
   }
-  &:active {
-    border: 3px @advantage-blue solid;
+  
+  &.advantage {
+    background-color: @advantage-blue;
+    &:hover {
+      background-color:@advantage-hover-blue;
+    }
+    &:active {
+      border: 3px @advantage-blue solid;
+    }
+    font-family: @advantage-font;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
   }
-}
-
-.vmox-button-font {
-  font-family: @vmox-font;
-  color: #FFF;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.vmox-gold-background-btn {
-  background-color: @vmox-gold;
-  &:hover {
-    background-color:@vmox-hover-gold;
-  }
-  &:active {
-    border: 3px @vmox-gold solid;
+  
+  &.disabled {
+    cursor: not-allowed;
+    background-color:#999999;
+    &:hover {
+      background-color:#999999;
+    }
+    &:active {
+      border: none;
+    }
   }
 }
