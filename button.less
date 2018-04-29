@@ -15,39 +15,80 @@
   &.large {
     height: 50px;
     width:300px;
+    font-size: 14px;
   }
   
   &.medium {
     height: 50px;
     width:135px;
+    font-size: 14px;
   }
   
+  &.small {
+    height: 20px;
+    width:125px;
+    font-size: 14px;
+  }
   &.vmox {
-    background-color: @vmox-gold;
-    &:hover {
-      background-color:@vmox-hover-gold;
-    }
-    &:active {
-      border: 3px @vmox-gold solid;
+    &.gold {
+      background-color: @vmox-gold;
+      &:hover {
+        background-color:@vmox-hover-gold;
+      }
+      &:active {
+        border: 3px @vmox-gold solid;
+      } 
     }
     font-family: @vmox-font;
     color: #FFF;
-    font-size: 14px;
     font-weight: bold;
+    &.large {
+      font-size: 14px;
+    }
+
+    &.medium {
+      font-size: 14px;
+    }
+
+    &.small {
+      font-size: 10px;
+    }
   }
   
   &.advantage {
-    background-color: @advantage-blue;
-    &:hover {
-      background-color:@advantage-hover-blue;
+    &.gold {
+      background-color: @advantage-gold;
+      &:hover {
+        background-color:@advantage-hover-gold;
+      }
+      &:active {
+        border: 3px @advantage-gold solid;
+      }
     }
-    &:active {
-      border: 3px @advantage-blue solid;
+    &.blue {
+      background-color: @advantage-blue;
+      &:hover {
+        background-color:@advantage-hover-blue;
+      }
+      &:active {
+        border: 3px @advantage-blue solid;
+      }
     }
+    
     font-family: @advantage-font;
     color: #FFF;
-    font-size: 16px;
     font-weight: bold;
+    &.large {
+      font-size: 14px;
+    }
+
+    &.medium {
+      font-size: 14px;
+    }
+
+    &.small {
+      font-size: 10px;
+    }
   }
   
   &.disabled {
