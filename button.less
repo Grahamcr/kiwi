@@ -102,3 +102,37 @@
     }
   }
 }
+
+.return-to-top-btn {
+  cursor: pointer;
+  height: 70px;
+  width: 89px;
+  background-color: @background-grey;
+  color: @link-blue;
+  text-align: center;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  
+  p {
+    position: relative;
+    top: 8px;
+  }
+  .fa {
+    font-size: 25px;
+    position: relative;
+    top: 12px;
+  }
+  &.advantage {
+    font-size: 13px;
+    font-family: @advantage-font;
+  }
+  &.vmox {
+    font-size: 12px;
+    font-family: @vmox-font;
+  }
+  &:hover {
+    background-color: @link-blue;
+    color: #FFF;
+  }
+}
