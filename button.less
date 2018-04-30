@@ -136,3 +136,83 @@
     color: #FFF;
   }
 }
+.dropdown {
+  position: relative;
+  
+  &.large {
+    width:300px;
+    .button {
+      height: 50px;
+    }
+  }
+  
+  &.medium {
+    width:135px;
+    .button {
+      height: 50px;
+    }
+  }
+  
+  &.small {
+    width:125px;
+    .button {
+      height: 20px;
+    }
+  }
+  &:hover {
+    .dropdown-content {
+      display: inline-block;
+    }
+  }
+  &.vmox {
+    .dropdown-content {
+      a:hover {
+        background-color: @vmox-gold;
+      }
+    }
+  }
+  &.advantage {
+    .dropdown-content {
+      a:hover {
+        background-color: @advantage-blue;
+        color: #FFF;
+      }
+    }
+  }
+  .button {
+    text-align: left;
+    justify-content: flex-start;
+    .fa-picture-o {
+      margin-left: 30px;
+      margin-right: 10px;
+    }
+    .chevron-down {
+      height: 17px;
+      position: absolute;
+      right: 20px;
+    }
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid @line-and-outline-grey;
+    a {
+      font-size: 16px;
+      text-transform: uppercase;
+      display: flex;
+      align-content: center;
+      height: 35px;
+      padding-top: 15px;
+      width: 100%;
+      background-color: #FFF;
+      color: @primary-font-color;
+      
+      .fa-picture-o {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
