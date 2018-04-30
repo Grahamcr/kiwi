@@ -166,16 +166,25 @@
   }
   &.vmox {
     .dropdown-content {
-      a:hover {
-        background-color: @vmox-gold;
+      
+      a {
+        font-family: @vmox-font;
+        font-size: 16px;
+        &:hover {
+          background-color: @vmox-gold;
+        }
       }
     }
   }
   &.advantage {
     .dropdown-content {
-      a:hover {
-        background-color: @advantage-blue;
-        color: #FFF;
+      a {
+        font-family: @advantage-font;
+        font-size: 18px;
+        &:hover {
+          background-color: @advantage-blue;
+          color: #FFF;
+        }
       }
     }
   }
@@ -183,7 +192,7 @@
     text-align: left;
     justify-content: flex-start;
     .fa-picture-o {
-      margin-left: 30px;
+      margin-left: 20px;
       margin-right: 10px;
     }
     .chevron-down {
@@ -193,6 +202,7 @@
     }
   }
   .dropdown-content {
+    z-index: 999;
     display: none;
     position: absolute;
     width: 100%;
