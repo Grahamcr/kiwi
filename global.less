@@ -20,6 +20,132 @@
 
 @advantage-font: Calibri;
 
+
+.main-content {
+  .image-container {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
+  .header {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+
+    .left-header {
+      float: left;
+      
+      .top-row {
+      
+        #icon-area {
+          float: left;
+          a {
+            .logo {
+              height: 35px;
+            }
+          }
+        }
+
+        #project-name-area {
+          position: relative;
+          top: 2px;
+          left: 15px;
+          a {
+            display: block;
+            font-size: 34px;
+            .yellow {
+              color:@vmox-gold;
+              font-family: @vmox-font;
+              font-weight: 300;
+            }
+            .blue {
+              color:@advantage-blue;
+              font-family: @advantage-font;
+              font-weight: 300;
+            }
+          }
+        } 
+      }
+
+      .bottom-row {
+        position: relative;
+        top: -11px;
+
+        .tagline {
+          font-family: @vmox-font;
+          font-style: italic;
+          font-weight: 300;
+          color: #333;
+          font-size: 15px;
+
+        }
+      }
+    }
+    .right-header {
+      position: relative;
+      top: 30px;
+      
+      float: right;
+      .search-bar {
+        .search-input {
+          width: 250px;
+          height: 30px;
+          box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+          border-radius: 0;
+          background-color: #FFFFFF;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #cccccc;
+          line-height: 25px;
+          font-family: @vmox-font;
+          position: relative;
+          left: 6px;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+        }
+        .search-btn {
+          background-color: @vmox-gold;
+          color: #FFF;
+          border: none;
+          display: inline-block;
+          font-family: @vmox-font;
+          font-weight: 700;
+          font-size: 15px;
+          height: 30px;
+          width: 95px;
+        }
+      }
+    }
+  }
+  .navi-header {
+    width:100%;
+    border-bottom: 1px solid #eee;
+    .navi-options {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 8px;
+      .navi-option-item {
+        font-family: @vmox-font;
+        color:#333;
+        font-weight: 500;
+        font-size: 18px;
+        margin-right: 40px;
+        padding-bottom: 5px;
+        
+        &.active {
+          border-bottom: 4px solid @vmox-gold;
+        }
+      }
+    }
+  }
+  .clear {
+    clear: both;
+  }
+}
+
 .section-header {
   font-family: @advantage-font;
   font-size: 30px;
@@ -113,6 +239,18 @@ a {
 }
 .rm-35 {
   margin-right: 35px;
+}
+.bm-50 {
+  margin-bottom: 50px;
+}
+.tm-50 {
+  margin-top: 50px;
+}
+.lm-50 {
+  margin-left: 50px;
+}
+.rm-50 {
+  margin-right: 50px;
 }
 .main-content {
   max-width: 1000px;
