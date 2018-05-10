@@ -161,6 +161,42 @@
       }
     }
   }
+  .image-row-wrapper {
+    padding-bottom: 75px;
+    .image-row {
+      clear: both;
+      .col {
+        float: left;
+        text-align: center;
+        &.transparent-image {
+          background-color: #F2F2F2;
+        }
+      }
+      
+      &.medium {
+        .col {
+          width: 15%;
+          margin-left: 1.25%;
+          margin-right: 1.25%;
+          
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &.small {
+        .col {
+          width: 6%;
+          margin-left: 2.25%;
+          margin-right: 2.25%;
+          
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 .section-header {
