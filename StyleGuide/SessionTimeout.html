@@ -1,0 +1,115 @@
+<head>
+
+    <link rel="stylesheet"  href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/less' href="styleguide.less">
+    <script src="../js/less.min.js" type="text/javascript"> </script>
+    <script src="../js/intense.js" type="text/javascript"> </script>
+</head>
+
+<div class="main-content">
+  <div class="header"> 
+    <div class="left-header">
+      <div class="top-row">
+        <div id="icon-area">
+          <a href="">
+            <img class="logo" src="../img/project-kiwi.png"/>
+          </a>
+        </div>
+        <div id="project-name-area">
+          <a>
+            <span class="yellow">Project</span>
+            <span class="blue">Kiwi</span>
+          </a>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <p class="tagline">Because No One Ever Said &quot;This Is Too Easy To Understand&quot;</p>
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="search-bar">
+        <input class="search-input" type="text"/>
+        <input type="submit" class="search-btn" name="searchSubmit" value="Search" onclick="location.href='../404/404.html';"/>
+      </div>
+    </div>
+  </div>
+  <div class="clear spacer"></div>
+  <div class="navi-header">
+    <div class="navi-options">
+      <a href="../404/404.html" class="navi-option-item">Home</a>
+      <a href="../404/404.html" class="navi-option-item active">Style Guide</a>
+      <a href="https://9vugxe.axshare.com/#g=1&p=_a__heading_1" class="navi-option-item">Design Library</a>
+    </div>
+  </div>
+  <div class="clear spacer"></div>
+  <h2 class="vmox bm-5">vMOX &amp; Advantage Session Timeout Interaction</h2>
+  <p class="light-content vmox bm-0 tm-0">Created May 22 2018</p>
+  <p class="light-content vmox bm-0 tm-0">Composed by <a href="mailto:cgraham@vmox.com?Subject=Mega%20Menu%20Navigation%20Question">Craig Graham</a></p>
+  
+  <div class="key-points-wrapper bm-35">
+    <h5 class="vmox bm-5 tm-25">Key Points - Session Timeout:</h5>
+    <ul>
+      <li>Reset the session timer as often as possible to minimize the occurrence of timeouts</li>
+      <li>If the session has expired and everything the user did can be restored in-place, then make it so! If it can't be restored - apologize profusely!</li>
+      <li>Session timeout falls under the accessibility standard of &quot;Timed Responses&quot;.  Therefore we need to both notifiy the user the timeout is occuring and give them an opportunity to extend their session.</li>
+      <li>Mockup can be viewed at: <a href="https://kmzcno.axshare.com/#g=1&p=session_warning&c=1">vMOX &amp; Advantage Session Timeout </a></li>
+    </ul>
+  </div>
+  
+  <p class="light-content larger vmox">Our session timeout interaction was designed to notify the user of a impending session with plenty to time to extend their session if needed. Accessibility standards for &quot;Timed Responses&quot; tell us that we need to provide all users with ample time to complete a task (you can find the referenced standard at: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html">Guideline 2.2</a>).  Therefore our design gives users 120 seconds to extend their session. The design also follows the principles of <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">visibility, consistency &amp; standards and feedback</a> by displaying the warning at the top of the page and by informing the user why they have been logged out once they are presented with the login page.</p>
+  
+  
+  <h3 class="vmox bm-0">Menu Interaction &amp; Style</h3>
+  <hr class="vMOX tm-0"/>
+  
+  <h5 class="vmox tm-35 bm-0">Warning Banner</h5>
+  
+   <p class="light-content larger lm-10 vmox">If the user has been inactive for 13 minutes the application should present a Session Timeout Countdown Warning Banner as shown in the screen shot below.  The warning banner should countdown from 120 seconds to 0 seconds, at which point it will redirect the user to the login screen where a message is left for the user explaining what happened. If the user does happen to still be viewing the page when the warning banner is presented they have the option to click on the call to action within the banner to extend their session for another 13 minutes (at which time they would be presented with the warning banner once again).</p>
+  
+  <div class="image-container bm-50">
+    <h5 class="vmox center bm-10 tm-50">Session Timeout Countdown Warning Banner</h5>
+    <img class="expand" src="../img/session-timeout-screenshots/session_warning.png" data-title="Countdown Warning Banner" data-caption="Shown on a ACC List View Page"/>
+  </div>
+  
+  <h5 class="vmox tm-35 bm-0">Login Page with Session Timeout Message</h5>
+  
+  <p class="light-content larger lm-10 vmox">Should the user not be available to click the call to action to extend the session or should they simply decide not to extend the session they will be redirected to the login page. In this case we will provide the user with <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">visibility</a> and <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">feedback</a> into why they have been logged out of the system using a bordered message box as shown in the screen shot below. Once the user logs back in we should do everything we can to return the application to the state they left it in.  If we cannot do so, we should apologize to the user through the use of a <a href="https://9vugxe.axshare.com/#g=1&p=_a__error_modal">modal message</a>.</p>
+  
+  <div class="image-container bm-50">
+    <h5 class="vmox center bm-10 tm-50">Login Form Page With Session Timeout Message</h5>
+    <img class="expand" src="../img/session-timeout-screenshots/login_page.png" data-title="Login Form With Session Timeout Message" data-caption=""/>
+  </div>
+  
+  
+  <h3 class="vmox tm-100 bm-0">Responsive Design</h3>
+  <hr class="vMOX tm-0"/>
+  
+  <h5 class="vmox tm-20 bm-0">Tablet</h5>
+  <p class="light-content larger lm-10 vmox">A tablet version of the Session Timeout Interaction has not yet been developed </p>
+  
+  <h5 class="vmox tm-35 bm-0">Mobile</h5>
+  <p class="light-content larger lm-10 vmox">A mobile version of the Session Timeout Interaction has not yet been developed</p>
+  
+  
+  <h3 class="vmox tm-100 bm-0">Related Icons &amp; Images</h3>
+  <hr class="vMOX tm-0 bm-10"/>
+  <p class="light-content larger lm-10 vmox">There are no image files related to this design</p>
+  
+  <h3 class="vmox tm-200 bm-0 clear">Similar Components</h3>
+  <hr class="vMOX tm-0"/>
+  <p class="light-content larger lm-10 vmox">There are no related components at this time for this design</p>
+  
+  
+  
+  <div class="bm-100"></div>
+  <script>
+      var elements = document.querySelectorAll( '.expand' );
+      Intense( elements );
+  </script>
+
+  <!-- Tweet Button -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  
+  
+</div>
+
