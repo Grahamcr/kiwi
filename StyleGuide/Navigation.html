@@ -1,0 +1,158 @@
+<head>
+
+    <link rel="stylesheet"  href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type='text/less' href="styleguide.less">
+    <script src="../js/less.min.js" type="text/javascript"> </script>
+    <script src="../js/intense.js" type="text/javascript"> </script>
+</head>
+
+<div class="main-content">
+  <div class="header"> 
+    <div class="left-header">
+      <div class="top-row">
+        <div id="icon-area">
+          <a href="">
+            <img class="logo" src="../img/project-kiwi.png"/>
+          </a>
+        </div>
+        <div id="project-name-area">
+          <a>
+            <span class="yellow">Project</span>
+            <span class="blue">Kiwi</span>
+          </a>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <p class="tagline">Because No One Ever Said &quot;This Is Too Easy To Understand&quot;</p>
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="search-bar">
+        <input class="search-input" type="text"/>
+        <input type="submit" class="search-btn" name="searchSubmit" value="Search" onclick="location.href='../404/404.html';"/>
+      </div>
+    </div>
+  </div>
+  <div class="clear spacer"></div>
+  <div class="navi-header">
+    <div class="navi-options">
+      <a href="../404/404.html" class="navi-option-item">Home</a>
+      <a href="../404/404.html" class="navi-option-item active">Style Guide</a>
+      <a href="https://9vugxe.axshare.com/#g=1&p=_a__heading_1" class="navi-option-item">Design Library</a>
+    </div>
+  </div>
+  <div class="clear spacer"></div>
+  <h2 class="vmox bm-5">vMOX Mega Menu Navigation</h2>
+  <p class="light-content vmox bm-0 tm-0">Created May 10 2018</p>
+  <p class="light-content vmox bm-0 tm-0">Composed by <a href="mailto:cgraham@vmox.com?Subject=Mega%20Menu%20Navigation%20Question">Craig Graham</a></p>
+  
+  <div class="key-points-wrapper bm-35">
+    <h5 class="vmox bm-5 tm-25">Key Points - Mega Menu:</h5>
+    <ul>
+      <li>Was designed to reinforce micro site mental model</li>
+      <li>Should have a static height as the user changes categories</li>
+      <li>Accessed by clicking on the menu dropdown in the header</li>
+      <li>Is a modal drop down that can be closed by clicking off the menu in the modal overlay</li>
+      <li>Mockup can be viewed at: <a href="https://9vugxe.axshare.com/#g=1&p=_v__mega_menu_header&fn=0">vMOX Mega Menu Design Library Mockup</a></li>
+    </ul>
+  </div>
+  
+  <p class="light-content larger vmox">The vMOX mega menu was designed to reinforce the Micro Site mental model to our users through the use of categorization and iconography. The mega menu also prioritizes the user&apos;s primary navigation method, searching, by giving priority real estate to a filterable search bar.  It&apos;s minimalistic design means we can keep the menu fixed to the top of the page and leverage <a href="https://lawsofux.com/fittss-law">Fitt&apos;s Law</a> to increase usability.  The menu structure follows <a href="https://lawsofux.com/hicks-law">Hick&apos;s Law</a> to decrease complexity by breaking the menu into categories in order to increase recall and recognition.  </p>
+  
+  
+  <h3 class="vmox bm-0">Menu Interaction &amp; Style</h3>
+  <hr class="vMOX tm-0"/>
+   <p class="light-content larger lm-10 vmox">The user can view the mega menu drop down at any time by clicking the menu link or the down chevron located next to the menu link. Once the menu is visible the user will see each of the high level categories presented to them in size 14px Roboto #333 Light text.  The mega menu is a modal dropdown, however if the user clicks anywhere on the modal overlay (background-color:#333, opacity 40%) then the mega menu will close. When the user hovers over one of the 40px tall by 275px wide links the background of the link is highlighted in vMOX gold (#FFC627) and the icon for that category, if present, is changed to have a #FFF background. The two standard link category icons are the Font Awesome Icons fa-home and fa-star for Home and Your Favorites respectively.  </p>
+  
+  <p class="light-content larger lm-10 vmox">The screen shot below shows the mega menu while the user is hovering over the Home category, which is the only category that does not have a menu flyout associated with it.</p>
+  
+  <div class="image-container bm-50">
+    <h5 class="vmox center bm-10 tm-50">Inital Menu View With Mouse Hovering Over Home</h5>
+    <img class="expand" src="../img/mega-menu-screenshots/mega-menu-init.jpg" data-title="Inital Menu View" data-caption="Shown with the mouse hovering over the home category link"/>
+  </div>
+  
+  <p class="light-content larger lm-10 vmox">Every other menu category will show a menu flyout as shown in the screen shot below.  The flyout should be a consistent height on every category and should be adjusted so that the mega menu overall height is greater than the height required to display the longest microsite menu list plus 30px of bottom padding. </p>
+  
+  <div class="image-container bm-50">
+    <h5 class="vmox center bm-10 tm-50">Category Flyout with Three Microsite Menu Lists</h5>
+    <img class="expand" src="../img/mega-menu-screenshots/mega-menu-micro-view.jpg" data-title="Category Flyout" data-caption="Shown with three Microsite Menu Lists"/>
+  </div>
+  
+  <p class="light-content larger lm-10 vmox">Each category flyout contains between 1 and 3 microsite menu lists which are 200px wide and have a 80px padding.  Microsite menu lists are added to the category flyout from left to right.  So if there is only one list then it will be displayed on the left, not centered, as shown below. </p>
+  
+  <div class="image-container bm-50">
+    <h5 class="vmox center bm-10 tm-50">Category Flyout with One Microsite Menu List</h5>
+    <img class="expand" src="../img/mega-menu-screenshots/only-one-microsite.jpg" data-title="Category Flyout" data-caption="Shown with one Microsite Menu Lists"/>
+  </div>
+  
+  <h3 class="vmox tm-100 bm-0">Responsive Design</h3>
+  <hr class="vMOX tm-0"/>
+  
+  <h5 class="vmox tm-20 bm-0">Tablet</h5>
+  <p class="light-content larger lm-10 vmox">A tablet version of the mega menu mockup which has not yet been documented in this style guide, but can be viewed here: <a href="https://9vugxe.axshare.com/#g=1&p=_v__mega_menu_header&view=a">Tablet Mega Menu Design Library</a>.</p>
+  
+  <h5 class="vmox tm-35 bm-0">Mobile</h5>
+  <p class="light-content larger lm-10 vmox">Each category flyout contains between 1 and 3 microsite menu lists which are 200px wide and have a 80px padding.  Microsite menu lists are added to the category flyout from left to right.  So if there is only one list then it will be displayed on the left, not centered, as shown below. </p>
+  
+  <p class="light-content larger lm-10 vmox">The microsite list still has the icons as before to allow the user to recognize the microsite they may want to view rather then force them to recall it (more on recognition vs recall at: <a href="https://www.nngroup.com/articles/recognition-and-recall/">Nielsen Norman Group</a>).  Even though the microsite list is much shorter than the previous category list, we still present the user with the same length menu for the shake of consistency.  Following the principle of User Control and Freedom we have included a back button in the microsite list menu so the user can return to the previous screen.  </p>
+  
+  <div class="image-container bm-50">
+    <h5 class="vmox center bm-10 tm-50">Mega Menu - Mobile View</h5>
+    <img class="expand" src="../img/mega-menu-screenshots/mobile%20view.jpg" data-title="Mobile View" data-caption="Display shown at 350px wide"/>
+  </div>
+  
+  <p class="light-content larger lm-10 vmox">Selecting a microsite presents the user with a new menu screen showing all of the pages organized under that microsite.  Once again we keep the menu the same height and provide a back button for the user should they want to return to the previous screen. </p>
+  
+  <p class="light-content larger lm-10 vmox">To view the mobile mockup version of the mega menu please visit: <a href="https://9vugxe.axshare.com/#g=1&p=_v__mega_menu_header&view=b">Mobile Mega Menu Design Library Mockup</a>. </p>
+  
+  
+  <h3 class="vmox tm-100 bm-0">Related Icons &amp; Images</h3>
+  <hr class="vMOX tm-0 bm-10"/>
+  <div class="image-row-wrapper">
+    <div class="image-row small bm-20">
+      <div class="col">
+        <img src="../img/navigation-icons/black-close.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/navigation-icons/blue-close.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/navigation-icons/white-close.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/navigation-icons/yellow-close.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/navigation-icons/grey-chevron.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/navigation-icons/white-chevron.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/navigation-icons/blue-chevron.png"/>
+      </div>
+    </div>
+  </div>
+  
+  <h3 class="vmox tm-200 bm-0 clear">Similar Components</h3>
+  <hr class="vMOX tm-0"/>
+  
+  <a href="Header.html" class="image-dashlet medium vmox">
+    <img src="../img/similar-component-images/vMOX/vMOX-Header.jpg"/>
+    <div class="label">
+      <p>Header Bar</p>
+    </div>
+  </a>
+  
+  <div class="bm-100"></div>
+  <script>
+      var elements = document.querySelectorAll( '.expand' );
+      Intense( elements );
+  </script>
+
+  <!-- Tweet Button -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  
+  
+</div>
+

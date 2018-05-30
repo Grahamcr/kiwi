@@ -1,0 +1,367 @@
+@advantage-blue: #003056;
+@advantage-hover-blue:#325977;
+@advantage-gold: #b4914b;
+@advantage-hover-gold: #896F38;
+
+@vmox-gold: #ffc627;
+@vmox-hover-gold: #CC9E1F;
+@vmox-black: #1B1A1B;
+
+@link-blue: #2173A3;
+@vmox-font: 'Roboto', sans-serif;
+
+@no-value-text-gray: #cccccc;
+@no-value-icon-gray: #eaeaea;
+@primary-font-color: #333333;
+@medium-font-color: #666;
+@light-font-color: #999999;
+@line-and-outline-gray:#cccccc;
+@background-gray:#f2f2f2;
+
+@alert-red: #d2232a;
+@alert-orange: #ff891c;
+@alert-yellow: #FF69B4;
+@alert-green: #86c232;
+
+@accent-dark-green: #336633;
+@accent-lime-green: #86C232;
+@accent-kelly-green: #46C37B;
+@accent-gray: #434343;
+@accent-purple: #990099;
+@accent-teal: #14ADC4;
+@accent-blue: #0B9ACC;
+@accent-watermelon: #FF7070;
+@accent-scarlett: #d2232a;
+@accent-brick: #D64C16;
+@accent-light-orange: #FA8B5B;
+@accent-maize: #FAD95B;
+@accent-pumpkin-spice: #F3B965;
+
+@advantage-font: Calibri;
+
+
+.main-content {
+  .image-container {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
+  .header {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+
+    .left-header {
+      float: left;
+      
+      .top-row {
+      
+        #icon-area {
+          float: left;
+          a {
+            .logo {
+              height: 35px;
+            }
+          }
+        }
+
+        #project-name-area {
+          position: relative;
+          top: 2px;
+          left: 15px;
+          a {
+            display: block;
+            font-size: 34px;
+            .yellow {
+              color:@vmox-gold;
+              font-family: @vmox-font;
+              font-weight: 300;
+            }
+            .blue {
+              color:@advantage-blue;
+              font-family: @advantage-font;
+              font-weight: 300;
+            }
+          }
+        } 
+      }
+
+      .bottom-row {
+        position: relative;
+        top: -11px;
+
+        .tagline {
+          font-family: @vmox-font;
+          font-style: italic;
+          font-weight: 300;
+          color: #333;
+          font-size: 15px;
+
+        }
+      }
+    }
+    .right-header {
+      position: relative;
+      top: 30px;
+      
+      float: right;
+      .search-bar {
+        .search-input {
+          width: 250px;
+          height: 30px;
+          box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+          border-radius: 0;
+          background-color: #FFFFFF;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #cccccc;
+          line-height: 25px;
+          font-family: @vmox-font;
+          position: relative;
+          left: 6px;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+        }
+        .search-btn {
+          background-color: @vmox-gold;
+          color: #FFF;
+          border: none;
+          display: inline-block;
+          font-family: @vmox-font;
+          font-weight: 700;
+          font-size: 15px;
+          height: 30px;
+          width: 95px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .navi-header {
+    width:100%;
+    border-bottom: 1px solid #eee;
+    .navi-options {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 8px;
+      .navi-option-item {
+        font-family: @vmox-font;
+        color:#333;
+        font-weight: 500;
+        font-size: 18px;
+        margin-right: 40px;
+        padding-bottom: 5px;
+        
+        &.active {
+          border-bottom: 4px solid @vmox-gold;
+        }
+      }
+    }
+  }
+  .clear {
+    clear: both;
+  }
+  .key-points-wrapper {
+    border-left: #eee solid 1px;
+    padding-left: 30px;
+    font-family: @vmox-font;
+    h5 {
+      color: @vmox-gold;
+    }
+    ul {
+      margin-top: 0px;
+      li {
+        color: #333;
+        margin-top: 4px;
+        font-size: 16px;
+      }
+    }
+  }
+  .image-row-wrapper {
+    padding-bottom: 75px;
+    .image-row {
+      clear: both;
+      .col {
+        float: left;
+        margin-bottom: 20px;
+        text-align: center;
+        &.transparent-image {
+          background-color: #F2F2F2;
+        }
+      }
+      
+      &.medium {
+        .col {
+          width: 15%;
+          margin-left: 1.25%;
+          margin-right: 1.25%;
+          
+          img {
+            width: 100%;
+          }
+        }
+      }
+      &.small {
+        .col {
+          width: 6%;
+          margin-left: 2.25%;
+          margin-right: 2.25%;
+          
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-header {
+  font-family: @advantage-font;
+  font-size: 30px;
+  color: @primary-font-color;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+  
+  span {
+    font-weight: bold;
+  }
+}
+.line-space {
+  width: 100%;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: @link-blue;
+}
+.bm-0 {
+  margin-bottom: 0px;
+}
+.tm-0 {
+  margin-top: 0px;
+}
+.lm-0 {
+  margin-left: 0px;
+}
+.rm-0 {
+  margin-right: 0px;
+}
+.bm-5 {
+  margin-bottom: 5px;
+}
+.tm-5 {
+  margin-top: 5px;
+}
+.lm-5 {
+  margin-left: 5px;
+}
+.rm-5 {
+  margin-right: 5px;
+}
+.bm-10 {
+  margin-bottom: 10px;
+}
+.tm-10 {
+  margin-top: 10px;
+}
+.lm-10 {
+  margin-left: 10px;
+}
+.rm-10 {
+  margin-right: 10px;
+}
+.bm-15 {
+  margin-bottom: 15px;
+}
+.tm-15 {
+  margin-top: 15px;
+}
+.lm-15 {
+  margin-left: 15px;
+}
+.rm-15 {
+  margin-right: 15px;
+}
+.bm-25 {
+  margin-bottom: 25px;
+}
+.tm-25 {
+  margin-top: 25px;
+}
+.lm-25 {
+  margin-left: 25px;
+}
+.rm-25 {
+  margin-right: 25px;
+}
+.bm-35 {
+  margin-bottom: 35px;
+}
+.tm-35 {
+  margin-top: 35px;
+}
+.lm-35 {
+  margin-left: 35px;
+}
+.rm-35 {
+  margin-right: 35px;
+}
+.bm-50 {
+  margin-bottom: 50px;
+}
+.tm-50 {
+  margin-top: 50px;
+}
+.lm-50 {
+  margin-left: 50px;
+}
+.rm-50 {
+  margin-right: 50px;
+}
+.bm-100 {
+  margin-bottom: 100px;
+}
+.tm-100 {
+  margin-top: 100px;
+}
+.lm-100 {
+  margin-left: 100px;
+}
+.rm-100 {
+  margin-right: 100px;
+}
+.bm-200 {
+  margin-bottom: 200px;
+}
+.tm-200 {
+  margin-top: 200px;
+}
+.lm-200 {
+  margin-left: 200px;
+}
+.rm-200 {
+  margin-right: 200px;
+}
+.main-content {
+  max-width: 1000px;
+  position: relative;
+  margin-left: -500px;
+  left: 50%;
+}
+.center {
+  text-align: center;
+}
+hr {
+  &.vmox, &.advantage {
+    background-color: @line-and-outline-gray; 
+    height: 1px; 
+    border: 0;
+  }
+}

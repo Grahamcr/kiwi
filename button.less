@@ -1,0 +1,229 @@
+@import "global.less";
+
+.button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  
+  &.large {
+    height: 50px;
+    width:300px;
+    font-size: 14px;
+  }
+  
+  &.medium {
+    height: 50px;
+    width:135px;
+    font-size: 14px;
+  }
+  
+  &.small {
+    height: 20px;
+    width:125px;
+    font-size: 14px;
+  }
+  &.vmox {
+    &.gold {
+      background-color: @vmox-gold;
+      &:hover {
+        background-color:@vmox-hover-gold;
+      }
+      &:active {
+        border: 3px @vmox-gold solid;
+      } 
+    }
+    font-family: @vmox-font;
+    color: #FFF;
+    font-weight: bold;
+    &.large {
+      font-size: 14px;
+    }
+
+    &.medium {
+      font-size: 14px;
+    }
+
+    &.small {
+      font-size: 10px;
+    }
+  }
+  
+  &.advantage {
+    &.gold {
+      background-color: @advantage-gold;
+      &:hover {
+        background-color:@advantage-hover-gold;
+      }
+      &:active {
+        border: 3px @advantage-gold solid;
+      }
+    }
+    &.blue {
+      background-color: @advantage-blue;
+      &:hover {
+        background-color:@advantage-hover-blue;
+      }
+      &:active {
+        border: 3px @advantage-blue solid;
+      }
+    }
+    
+    font-family: @advantage-font;
+    color: #FFF;
+    font-weight: bold;
+    &.large {
+      font-size: 14px;
+    }
+
+    &.medium {
+      font-size: 14px;
+    }
+
+    &.small {
+      font-size: 10px;
+    }
+  }
+  
+  &.disabled {
+    cursor: not-allowed;
+    background-color:#999999;
+    &:hover {
+      background-color:#999999;
+    }
+    &:active {
+      border: none;
+    }
+  }
+}
+
+.return-to-top-btn {
+  cursor: pointer;
+  height: 70px;
+  width: 89px;
+  background-color: @background-gray;
+  color: @link-blue;
+  text-align: center;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  
+  p {
+    position: relative;
+    top: 8px;
+  }
+  .fa {
+    font-size: 25px;
+    position: relative;
+    top: 12px;
+  }
+  &.advantage {
+    font-size: 13px;
+    font-family: @advantage-font;
+  }
+  &.vmox {
+    font-size: 12px;
+    font-family: @vmox-font;
+  }
+  &:hover {
+    background-color: @link-blue;
+    color: #FFF;
+  }
+}
+.dropdown {
+  position: relative;
+  
+  &.large {
+    width:300px;
+    .button {
+      height: 50px;
+    }
+  }
+  
+  &.medium {
+    width:135px;
+    .button {
+      height: 50px;
+    }
+  }
+  
+  &.small {
+    width:125px;
+    .button {
+      height: 20px;
+    }
+  }
+  &:hover {
+    .dropdown-content {
+      display: inline-block;
+    }
+  }
+  &.vmox {
+    .dropdown-content {
+      
+      a {
+        font-family: @vmox-font;
+        font-size: 16px;
+        &:hover {
+          background-color: @vmox-gold;
+        }
+      }
+    }
+  }
+  &.advantage {
+    .dropdown-content {
+      a {
+        font-family: @advantage-font;
+        font-size: 18px;
+        &:hover {
+          background-color: @advantage-blue;
+          color: #FFF;
+        }
+      }
+    }
+  }
+  .button {
+    text-align: left;
+    justify-content: flex-start;
+    .fa-picture-o {
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+    .chevron-down {
+      height: 17px;
+      position: absolute;
+      right: 20px;
+    }
+  }
+  .dropdown-content {
+    z-index: 999;
+    padding-top: 5px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid @line-and-outline-gray;
+    a {
+      font-size: 16px;
+      text-transform: uppercase;
+      display: flex;
+      align-content: center;
+      height: 35px;
+      padding-top: 15px;
+      width: 100%;
+      background-color: #FFF;
+      color: @primary-font-color;
+      
+      .fa-picture-o {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
