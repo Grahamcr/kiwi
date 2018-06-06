@@ -65,7 +65,7 @@
   <h5 class="vmox tm-35 bm-0">Form Title/Header</h5>
   <p class="light-content larger lm-10 vmox">Each form in vMOX should have a title to give the user some context around the form they will be filling out.  Whenver it makes sense, it is helpful to include an icon to give further context.  There are additional cases where it makes sense to include a call to action for the form at the title level, such as a &quot;Preview&quot; function.</p>
   
-  <div class="image-container bm-50">
+  <div class="image-container bm-100">
     <h5 class="vmox center bm-10 tm-50">Standard Form Title with Image</h5>
     <img class="expand" src="../img/form/header.png" data-title="Standard Form Title" data-caption="Form title shown with a option left-aligned image"/>
   </div>
@@ -73,7 +73,7 @@
   <h5 class="vmox tm-35 bm-0">Input Section</h5>
   <p class="light-content larger lm-10 vmox">vMOX forms are comprised of one or input sections.  A basic input section includes a title, always-visible hint text and a input field of some type for the user to complete. The input field will vary based on the requirements of the question with some example types being, free-form text fields, text-area fields, scale selections, etc.   These input sections should follow the <a href="https://lawsofux.com/law-of-common-region.html">Law of Common Region</a> by grouping the title, hint and input close together while providing adequate and equal spacing between each input section to make for a clear distinction.   </p>
   
-  <div class="image-container bm-50">
+  <div class="image-container bm-100">
     <h5 class="vmox center bm-10 tm-50">Example Input Section</h5>
     <img class="expand" src="../img/form/inputArea.png" data-title="Example Input Section" data-caption="Dollar Amount Input Section"/>
   </div>
@@ -111,106 +111,55 @@
     <img class="expand" src="../img/form/dollar-input.png" data-title="Dollar Amount Input Section" data-caption=""/>
   </div>
   
-  <div class="image-container bm-50">
+  <div class="image-container bm-100">
     <h5 class="vmox center bm-10 tm-100">Scale Selection Input Section</h5>
     <img class="expand" src="../img/form/scale-selector.png" data-title="Scale Selector Input" data-caption=""/>
   </div>
   
-  <h5 class="vmox tm-35 bm-0">Mega Menu</h5>
-  <p class="light-content larger lm-10 vmox">The user can view the mega menu drop down at any time by clicking the menu link or the down chevron located next to the menu link.  For more information on the mega menu see the <a href="Navigation.html">Mega Menu Style Guide</a>.    </p>
+  <h5 class="vmox tm-35 bm-0">Form Section Header</h5>
+  <p class="light-content larger lm-10 vmox">When a form starts to become long it sometimes make sense to break the form into different sections.  The advantage is that it groups similar inputs together for the user and gives the user a sense that they are making progress while they work their way through filling out a lot of inputs.  The section header is used to signal to the user that a new section of the form has started.  The title should be very descriptive, but still short enough that it fits on one line. </p>
   
-  <h5 class="vmox tm-35 bm-0">Search</h5>
-  <p class="light-content larger lm-10 vmox">When users type into the search box they should see autocomplete suggestions as well as instant results (this is not shown in the mockup). The maximum number of suggestions/results shown at a time shown at a time should be 10. To initiate the search the user can hit the enter key, click the magnifying glass icon, or choose one of the suggestions or results.  The font for the search query string, suggestions and results is Roboto #333, size 14. To filter the dataset that the user is searching, they can click the dropdown to the left of the search bar and choose an option.  The default filter is "All". </p>
-  
-  
-  <div class="image-container bm-50">
-    <h5 class="vmox center bm-10 tm-50">Header Style Details</h5>
-    <img class="expand" src="../img/header-bar-screenshots/style.jpg" data-title="Header Style Details"/>
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Section Header</h5>
+    <img class="expand" src="../img/form/sectionHeader.png" data-title="Example Section Header" data-caption=""/>
   </div>
   
-  
-  <h5 class="vmox tm-35 bm-0">Notifications</h5>
-  <p class="light-content larger lm-10 vmox">The notification bell is 25px by 25px, #fff.  When there is a notification a 12 px by 12px #ffc627 circle appears on the lower right of the icon.  The circle should be displayed until the user clicks on the notification.  What happens when the user clicks on the notification icon is not yet shown in the mockup.</p>
-  
-  
-  <h5 class="vmox tm-35 bm-0">Settings</h5>
-  <p class="light-content larger lm-10 vmox">The user's profile picture should be displayed in a circle 25px by 25px.  If the user has not uploaded a profile picture display the icon instead, fa-user-circle-o, #ffc627.  To the right of the picture/icon, display "Hi," followed by the user's first name in Roboto 14px Bold, #fff.  What happens when the user clicks on the settings icon is not shown yet in the mockup.</p>
+  <h5 class="vmox tm-35 bm-0">Continue Bar (Call to Action Fixed Position Bar)</h5>
+  <p class="light-content larger lm-10 vmox">Our forms all use a fixed/&quot;Sticky&quot; position footer to display the forms submit/continue call to action.  This bar should always be visible to the user so they can know what they will need to do in order to complete the form.  The Continue/Submit button should be disabled on the page load and should only be enabled when the form is completed and validated.</p>
   
   
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Continue Call to Action Fixed Bar</h5>
+    <img class="expand" src="../img/form/stickyProgressC2A.png" data-title="Call to Action Fixed Bar"/>
+  </div>  
   
+  <h5 class="vmox tm-35 bm-0">Form Validation</h5>
+  <p class="light-content larger lm-10 vmox">Whenever possible user input should be validated in real-time as the user types.  A use should not have to click on submit/continue in order to see that they have entered a field incorrectly.  For example, users should be notified if the value they have entered has been formatted incorrectly (phone numbers, email address, dates, numbers, etc) or is not available (username taken, company doesn't exist, etc).  We should provide this feedback to the user by displaying a grey X that turns into a red X if there is an error condition or a green check mark if the condition is met. </p>
+  
+  <p class="light-content larger lm-10 vmox">To see example validation interactions please visit the Communication Management Mockup at: <a href="https://ony9kb.axshare.com/#p=home&fn=0&g=1">Communication Management OnePortal Mockup</a> </p>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Form Validation Process</h5>
+    <img class="expand" src="../img/form/form-validation.png" data-title="Form Validation Process"  data-caption="This show the validation iteration for a basic free-form input"/>
+  </div>  
   
   <h3 class="vmox tm-100 bm-0">Responsive Design</h3>
   <hr class="vMOX tm-0"/>
   
   <h5 class="vmox tm-20 bm-0">Tablet</h5>
-  <p class="light-content larger lm-10 vmox">A tablet version of the header mockup which has not yet been documented in this style guide, but can be viewed here: <a href="https://9vugxe.axshare.com/#g=1&p=_v__mega_menu_header&view=a">Tablet Header Bar Design Library</a>.</p>
+  <p class="light-content larger lm-10 vmox">No Tablet View at This Time...</p>
   
   <h5 class="vmox tm-35 bm-0">Mobile</h5>
-  <p class="light-content larger lm-10 vmox">When the user is viewing this site on their mobile device there are some changes to the header.  The logo, menu and notifications remain the same.  The search functionality is hidden under a magnifying glass icon.  When the icon is tapped the search box, filter and button are displayed in a bar under the header. They are displayed until the user clicks the magnifying glass icon in the header again.  The search functionality remains the same.  The settings icon and functionality remains the same but the "Hi [user's name]" is no longer displayed. </p>
-  
-  <div class="image-container bm-50">
-    <h5 class="vmox center bm-10 tm-50">Header - Mobile View</h5>
-    <img class="expand" src="../img/header-bar-screenshots/mobile.jpg" data-title="Mobile View" data-caption="Display shown at 350px wide"/>
-  </div>
-  
-  <p class="light-content larger lm-10 vmox">To view the mobile mockup version of the mega menu please visit: <a href="https://9vugxe.axshare.com/#g=1&p=_v__mega_menu_header&view=b">Mobile Header Design Library Mockup</a>. </p>
-  
+  <p class="light-content larger lm-10 vmox">No Mobile View at This Time... </p>  
   
   <h3 class="vmox tm-100 bm-0">Related Icons &amp; Images</h3>
   <hr class="vMOX tm-0 bm-10"/>
-  <div class="image-row-wrapper">
-    <div class="image-row small bm-20">
-      <div class="col">
-        <img src="../img/navigation-icons/black-close.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/blue-close.png"/>
-      </div>
-      <div class="col transparent-image">
-        <img src="../img/navigation-icons/white-close.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/yellow-close.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/grey-chevron.png"/>
-      </div>
-      <div class="col transparent-image">
-        <img src="../img/navigation-icons/white-chevron.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/blue-chevron.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/gold-alert.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/yellow-alert.png"/>
-      </div>
-      <div class="col transparent-image">
-        <img src="../img/navigation-icons/white-alert.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/yellow-search.png"/>
-      </div>
-      <div class="col">
-        <img src="../img/navigation-icons/gold-search.png"/>
-      </div>
-      <div class="col transparent-image">
-        <img src="../img/navigation-icons/white-search.png"/>
-      </div>
-    </div>
-  </div>
+  <p class="light-content larger lm-10 vmox">No Related Icons at This Time... </p>
   
   <h3 class="vmox tm-200 bm-0 clear">Similar Components</h3>
   <hr class="vMOX tm-0 bm-35"/>
   
-  <a href="Navigation.html" class="image-dashlet medium vmox">
-    <img src="../img/similar-component-images/vMOX/vMOX-Mega-Menu.jpg"/>
-    <div class="label">
-      <p>Mega-Menu</p>
-    </div>
-  </a>
+  <p class="light-content larger lm-10 vmox">No Similar Components at This Time... </p>
   
   
   <div class="bm-100"></div>
