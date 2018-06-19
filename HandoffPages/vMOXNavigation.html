@@ -58,13 +58,13 @@
   
   <p class="light-content larger vmox">Based on the results of the <a href="https://obyzb2.axshare.com/#g=1" target="_blank">vMOX Navigation Card Sort Study</a> we determined that most of our users would organize the navigation options based by role.  This suggested that users would relate to a microsite layout where the user is directed to a role-based experience upon log in. In order to support this we needed to develop a new navigation scheme that seperates the different roles into their own microsites. </p>
   
-  <h3 class="vmox bm-0">Style Suggestions</h3>
+  <h3 class="vmox bm-0">Navigation Links - Style Suggestions</h3>
   <hr class="vMOX tm-0"/>
   
   <p class="light-content larger vmox">The vMOX Navigation 2.0 header has two different views: Microsite Homepages and Microsite Content Pages.  The first view we will cover is the Microsite Homepage, which is the view the user will be presented with when they are on the homepage for a particular role. </p>
   
   
-  <p class="light-content larger vmox">The homepage view has a banner that is 50% image and 50% banner, followed by a navigation bar located directly below the banner.  The number of links displayed in the navigation bar is determined by the amount of horizontal space it has been allocated by the viewport. Navigation links should always be evenly spaced at 135 pixels apart.  Therefore the number of links which are displayed is determined by how many fit in the bar.  </p>
+  <p class="light-content larger vmox">The homepage view has a banner that is 50% image and 50% banner, followed by a navigation bar located directly below the banner.  The number of links displayed in the navigation bar is determined by the amount of horizontal space it has been allocated by the viewport. For example the mockup is 1600px wide and there are seven eventually spaced links. The space between them is determined by the length of the links.  For example the first screen shot shows a menu where the links are 135px apart in order to be equally spaced and the second mockup shows the links spaced at 120px apart in order to be equally spaced. </p>
   
   <div class="image-container bm-100">
     <h5 class="vmox center bm-10 tm-50">vMOX Navigation Bar Spacing</h5>
@@ -72,14 +72,75 @@
     <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
   </div>
   
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">vMOX Navigation Bar Spacing II</h5>
+    <img class="expand" src="../img/handoff/navigation/navigation_spacing_II.png" data-title="vMOX Navigation Bar Spacing" data-caption="120px between links"/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
   <p class="light-content larger vmox">If there are more links then will fit in the navigation bar then those links are put into the &quot;More&quot; dropdown menu.  This menu is accessed by clicking on the &quot;More&quot; which acts as a toggle (both hiding and showing the menu).  If the user selects a link in the &quot;More&quot; menu then &quot;More&quot; becomes bold and underlined in the Navigation Bar and the link selected in the &quot;More&quot; menu is also bolded and underlined.  </p>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">More Menu (Link Overflow Area)</h5>
+    <img class="expand" src="../img/handoff/navigation/More_Menu.png" data-title="More Menu" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
+  <h3 class="vmox bm-0">Hompage Banners - Style Suggestions</h3>
+  <hr class="vMOX tm-0"/>
+  
+  <p class="light-content larger vmox">When the user visits the homepage of one of the roles (accessed from the role hamburger located at the top left of the header) we will present them with the larger banner, complete with photo.  This is the only page that this header will be displayed on.  The photo should not be stretched or skewed in order to make it fit within the 50% space it is allocated. Instead it should slide behind the solid color div to the right as the viewport width changes.  To find the appropriate color codes please visit the <a href="https://grahamcr.github.io/kiwi/StyleGuide/Colors.html" target="_blank">vMOX colors page</a>.  For the images used in the header, please go to the referenced images/icons section below on this page. </p>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Homepage Header</h5>
+    <img class="expand" src="../img/handoff/navigation/Homepage_Header.png" data-title="Homepage Header" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
+  <h3 class="vmox bm-0">Standard Banner - Style Suggestions</h3>
+  <hr class="vMOX tm-0"/>
+  
+  <p class="light-content larger vmox">Any other page the user visits they will be presented with our more minimalist standard header.  This header is a simple 40px tall header with an icon and the name of the role the user is currently viewing the page as. All the links and the menus will interact the same way. </p>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Standard Header</h5>
+    <img class="expand" src="../img/handoff/navigation/standard_header.png" data-title="Standard Header" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
+  
+  <h3 class="vmox bm-0">Flyout Global Menu</h3>
+  <hr class="vMOX tm-0"/>
+  
+  
+  <p class="light-content larger vmox">The menu flyout is how the user can switch the role microsite they are currently viewing.  The flyout should appear by sliding out from the left, with the animation lasting no more than 300ms.  The flyout should close when the user clicks on a link within the flyout menu or when the user click anywhere on the screen which is not the flyout itself.  Each link is 50px tall and should be highlighted in #F2F2F2 with a text color of #2173A3 (link blue).  The &quot;Home&quot; link should take the user to the global homepage, the page above the role level.  As the viewport width changes the flyout menu does not change.</p>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Flyout Menu</h5>
+    <img class="expand" src="../img/handoff/navigation/menu-flyout.png" data-title="Flyout Menu" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
+  
+  <h3 class="vmox bm-0">Top Navigation Bar</h3>
+  <hr class="vMOX tm-0"/>
+  
+  <p class="light-content larger vmox">The Top Navigation Bar is a sticky/fixed positioned bar which is used to give the user quick access to search, alerts and the global role menu at all times. The navigation bar has a #FFF background with a light #F2F2F2 1px border. </p>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Top Navigation Bar</h5>
+    <img class="expand" src="../img/handoff/navigation/top_nav.png" data-title="Top Navigation Bar" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
+  
   
   
   <h3 class="vmox bm-0">Video Walk-Through</h3>
   <hr class="vMOX tm-0"/>
   
   <video width="1000" height="650" controls>
-    <source src="../img/handoff/communicationManagement/video.mp4" type="video/mp4">
+    <source src="../img/handoff/navigation/NavigationHandoff.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   
@@ -87,14 +148,142 @@
   <hr class="vMOX tm-0"/>
   
   <h5 class="vmox tm-20 bm-0">Tablet</h5>
-  <p class="light-content larger lm-10 vmox">No Tablet View at This Time...</p>
+  
+  <p class="light-content larger vmox">When the user views the navigation from a tablet, little should change.  The homepage header, standard header, search bar and navigation bar will all display the same as they do on a desktop. The only change is how many navigation links we will display to the user in the navigation bar.</p>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Tablet View - Homepage Header</h5>
+    <img class="expand" src="../img/handoff/navigation/tablet_header.png" data-title="Tablet Homepage Header" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Tablet View - Standard Header</h5>
+    <img class="expand" src="../img/handoff/navigation/tablet_header.png" data-title="Tablet Standard Header" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
   
   <h5 class="vmox tm-35 bm-0">Mobile</h5>
-  <p class="light-content larger lm-10 vmox">No Mobile View at This Time... </p>  
+  <p class="light-content larger lm-10 vmox">As the user views the navigation on smaller viewports there are a few changes that we must make to accommodate the limited horizontal space.  The first is that we hide the search bar in a toggle button that would display a second header containing the search bar.  The search bar is styled exactly the same way as it is in the desktop view, it is just hidden until the user toggles it on.   The next change that is made to the design is to move the image banner to be a single div that has a color overlay.  This overlay is a 100% to 80% (left to right) gradient that uses the same accent color as the desktop version of the design for that role microsite did. The final change is that the dropdown &quote;More&quot; menu is rearranged to optimize it for the smaller view. </p>  
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Mobile View Design Changes</h5>
+    <img class="expand" src="../img/handoff/navigation/mobile_view.png" data-title="Mobile View Design Changes" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0&view=b&c=1" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
+  
+  <p class="light-content larger lm-10 vmox">Should the user be viewing the navigation from a very small viewport, such as a portrait orientated smart phone there is one final change made the design.  In this case we want to limit how much vertical space the homepage header takes so the user does not feel overwhelmed by the header on first glance.   </p>  
+  
+  <div class="image-container bm-100">
+    <h5 class="vmox center bm-10 tm-50">Very Small (less than 380px wide) Mobile View Design Changes</h5>
+    <img class="expand" src="../img/handoff/navigation/small_phone.png" data-title="Mobile View Design Changes" data-caption=""/>
+    <a href="https://xmpmxv.axshare.com/start.html#p=iteration_1&g=1&fn=0&view=c&c=1" target="_blank" class="vmox gold button medium">View Mockup</a>
+  </div>
   
   <h3 class="vmox tm-100 bm-0">Related Icons &amp; Images</h3>
   <hr class="vMOX tm-0 bm-10"/>
-  <p class="light-content larger lm-10 vmox">No Related Icons at This Time... </p>
+  <div class="image-row-wrapper bm-350">
+    <div class="image-row small bm-20">
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/am.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/accountManagement_white.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/am_banner.jpg"/>
+      </div>
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/busDev.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/busDev_white.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/busDev_banner.jpg"/>
+      </div>
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/ex.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/ex_white.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/ex_banner.jpg"/>
+      </div>
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/help.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/help_white.png"/>
+      </div>
+      
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/home.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/home_white.png"/>
+      </div>
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/pm.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/pm_white.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/pm_banner.jpg"/>
+      </div>
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/procurement.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/procurement_white.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/procurement_banner.jpg"/>
+      </div>
+      
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/profile.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/profile_white.png"/>
+      </div>
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/favorite.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/Star_white.png"/>
+      </div>
+
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/reports.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/reports_white.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/report_banner.jpg"/>
+      </div>
+      
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/settings.png"/>
+      </div>
+      <div class="col transparent-image">
+        <img src="../img/relatedIconsAndImages/NavigationWEMRedesign/settings_white.png"/>
+      </div>
+      
+    </div>
+  </div>
   
   <h3 class="vmox tm-200 bm-0 clear">Similar Components</h3>
   <hr class="vMOX tm-0 bm-35"/>
