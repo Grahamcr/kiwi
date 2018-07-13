@@ -176,7 +176,28 @@ html, body {
       background-color:@advantage-hover-gold;
     }
   }
+  &.status {
+    &.green {
+      background-color: @alert-green;
+    }
+    &.green-hover {
+      background-color: @alert-green-hover;
+    }
+    &.red {
+      background-color: @alert-red;
+    }
+    &.red-hover {
+      background-color: @alert-red-hover;
+    }
+    &.blue {
+      background-color: @link-blue;
+    }
+    &.blue-hover {
+      background-color: @link-blue-hover
+    }
+  }
 }
+
 .content-block {
   border: solid 1px @line-and-outline-gray;
   
@@ -215,4 +236,8 @@ html, body {
 }
 .state-row {
   margin-bottom: 50px;
+}
+
+.bottom-padding {
+  height: 400px;
 }
