@@ -136,3 +136,83 @@ html, body {
       }
     }
 }
+
+.color-block {
+  width: 16px;
+  height: 16px;
+  float:left;
+  margin-right: 5px;
+  &.vmox {
+    &.gold {
+      background-color: @vmox-gold;
+    }
+    &.gold-hover {
+      background-color: @vmox-hover-gold;
+    }
+    &.disabled {
+      background-color: @light-font-color;
+    }
+    &.primary-font {
+      background-color: @primary-font-color;
+    }
+    &.light-blue-hover {
+      background-color: @vmox-light-blue-hover;
+    }
+    &.light-blue {
+      background-color: @vmox-light-blue;
+    }
+  }
+  &.advantage {
+    &.blue {
+      background-color: @advantage-blue;
+    }
+    &.blue-hover { 
+      background-color: @advantage-hover-blue;
+    }
+    &.gold {
+      background-color:@advantage-gold;
+    }
+    &.gold-hover {
+      background-color:@advantage-hover-gold;
+    }
+  }
+}
+.content-block {
+  border: solid 1px @line-and-outline-gray;
+  
+  .title-col {
+    border-bottom: 1px solid @line-and-outline-gray;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    margin-bottom: 0px;
+  }
+  .button-area {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+  }
+}
+.custom-cf {
+  padding-right:50px;
+  margin-left: -20px;
+}
+.notes-area {
+  margin-top: 20px;
+}
+.row-title {
+  position: relative;
+  
+  h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-left: 65px;
+  }
+}
+.state-row {
+  margin-bottom: 50px;
+}
