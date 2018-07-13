@@ -10,6 +10,7 @@
 @vmox-light-blue-hover: #1195A8;
 
 @link-blue: #2173A3;
+@link-blue-hover: #1B5B83;
 @vmox-font: 'Roboto', sans-serif;
 
 @no-value-text-gray: #cccccc;
@@ -21,9 +22,11 @@
 @background-gray:#f2f2f2;
 
 @alert-red: #d2232a;
+@alert-red-hover: #9B1A20;
 @alert-orange: #ff891c;
 @alert-yellow: #FF69B4;
 @alert-green: #86c232;
+@alert-green-hover: #6B9D28;
 
 @accent-dark-green: #336633;
 @accent-lime-green: #86C232;
@@ -50,6 +53,37 @@
     text-align: center;
     img {
       width: 90%;
+    }
+    .button {
+      position: relative;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: 50px;
+    }
+  }
+  
+  .side-by-side-container {
+    height: 300px;
+    margin-bottom: 100px;
+    .left, .right {
+      height: 300px;
+      width: 48%;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+    .left {
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right {
+      position: absolute;
+      left: 50%;
+      clear: both;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
