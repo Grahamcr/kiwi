@@ -47,7 +47,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="/kiwi">Home <span class="sr-only">(current)</span></a>
       </li>
 
@@ -79,7 +79,9 @@
           <a class="dropdown-item" href="../HandoffPages/alertsAndRecentACC.html">Alerts &amp; Recent Activity Flyout (ACC-606)</a>
           <a class="dropdown-item" href="../HandoffPages/communicationManagementR2.html">Communication Management Release 2</a>
           <a class="dropdown-item" href="../HandoffPages/communicationManagement.html">Communication Management MVP</a>
+          
           <a class="dropdown-item" href="../HandoffPages/communicationManagement.html">Exhibit A Generation</a>
+          
           <a class="dropdown-item" href="../StyleGuide/Header.html">Header 1.0 <span class="bold italic">(Deprecated)</span></a>
           <a class="dropdown-item" href="../StyleGuide/SessionTimeout.html">Session Timeout</a>
           <a class="dropdown-item" href="../StyleGuide/Navigation.html">vMOX Navigation 1.0 <span class="bold italic">(Deprecated)</span></a>
@@ -100,35 +102,84 @@
   
 
 
-  <h2 class="vmox bm-5 tm-35">ACC Alerts Navigation Access</h2>
-  <p class="light-content vmox bm-0 tm-0">Created June 26 2018</p>
+  <h2 class="vmox bm-5 tm-35">Exhibit A Generation - Iteration 1</h2>
+  <p class="light-content vmox bm-0 tm-0">Created July 27 2018</p>
   <p class="light-content vmox bm-0 tm-0">Composed by <a href="mailto:cgraham@vmox.com?Subject=Mega%20Menu%20Navigation%20Question">Craig Graham</a></p>
   
   <div class="key-points-wrapper bm-35">
-    <h5 class="vmox bm-5 tm-25">Key Points - ACC-606:</h5>
+    <h5 class="vmox bm-5 tm-25">Key Points - Communication Management:</h5>
     <ul>
-      <li>This Handoff is for <a href="https://vmoxdevops.atlassian.net/browse/ACC-606" target="_blank">Desigh Request ACC-606</a>: Access to Alerts </li>
-      <li>The goal of this feature is to provide consistent access to the Alerts list throughout the application</li>
-      <li>Mockup can be viewed at: <a href="https://9tenbu.axshare.com/#g=1&p=dashboard_view&c=1" target="_blank">ACC Portal Mockup</a></li>
+      <li>This is the first iteration of the Exhibit A Generation</li>
+      <li>The goal of this iteration is to give AM&#39;s the ability to manage the timespan, exclusions and billing data while creating an Exhibit A</li>
+      <li>Mockup can be viewed at: <a href="https://hx0c50.axshare.com/#g=1&p=opportunity&fn=0" target="_blank">Exhibit A Generation Mockup - Iteration 1</a></li>
     </ul>
   </div>
   
-  <p class="light-content larger vmox">The Alerts notification area is a new addition all of the views in ACC with the exception of the Map View which already has this functionality built into the right-rail bar. The notification dot in the header shows a count of the user&#39;s alerts.</p>
-  
-  <h3 class="vmox bm-0 tm-50">Style Suggestions</h3>
+  <h3 class="vmox bm-0 tm-50">Style Suggestions - Communications Home</h3>
   <hr class="vMOX tm-0"/>
   
-  <div class="image-container bm-100">
-    <h5 class="vmox center bm-10 tm-50">ACC 606: Alerts</h5>
-    <img class="expand" src="../img/handoff/RecentActivityAndAlerts/recent_activity_and_alerts_documentaiton.png" data-title="Alerts" data-caption=""/>
-    <a href="https://9tenbu.axshare.com/#g=1&p=dashboard_view&c=1" target="_blank" class="vmox gold button medium">View Mockup</a>
+  <p class="light-content larger vmox">The below screenshots show style suggestions for the Exhibit A Generation interface.  They are based on a 1600px wide mockup, which can be viewed at: <a href="https://hx0c50.axshare.com/#g=1&p=opportunity&fn=0" target="_blank">Exhibit A Generation Mockup - Iteration 1</a></p>
+  
+  <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">Landing View</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/PleaseSelectTimeframe.png" data-title="Landing Page View" data-caption=""/>
+    
   </div>
   
-  <h3 class="vmox bm-0">Video Walk-Through</h3>
+  
+  <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">No Billing Data Flyout</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/noDataFlyout.png" data-title="No Billing Data Flyout" data-caption=""/>
+    
+  </div>
+  
+  
+  <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">Select Month Flyout</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/SelectMonthsFlyout.png" data-title="Select Month Flyout" data-caption=""/>
+    
+  </div>
+  
+  
+  <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">Baseline Collapsed</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/BaselineCollapsed.png" data-title="Baseline Collapsed" data-caption=""/>
+    
+  </div>
+  
+  <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">Baseline Expanded</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/ExhibitABaselines.png" data-title="Baseline Expanded" data-caption=""/>
+    
+  </div>
+  
+  
+   <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">Baseline Showing Exclusions</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/Exclusions.png" data-title="Baseline Showing Exclusions" data-caption=""/>
+    
+  </div>
+  
+  <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">Manage Exclusions Flyout</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/ManageExclusions.png" data-title="Manage Exclusions Flyout" data-caption=""/>
+    
+  </div>
+  
+  <div class="image-container bm-100 tm-50">
+    <h5 class="vmox center bm-20 tm-50">Thresholds Tab</h5>
+    <img class="expand border" src="../img/handoff/ExhibitAGeneration/Thresholds.png" data-title="Thresholds Tab" data-caption=""/>
+    
+  </div>
+  
+  
+  <h3 class="vmox bm-0">Video Walk-Through - Release Two</h3>
   <hr class="vMOX tm-0"/>
   
+  <p class="light-content larger vmox">This video covers all of the pages included in the Commmunications Management Release 2. If you have any questions feel free to reach out.</p>
+  
   <video width="1000" height="650" controls>
-    <source src="../img/handoff/RecentActivityAndAlerts/videoWalkthrough.mp4" type="video/mp4">
+    <source src="../img/handoff/ExhibitAGeneration/video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   
@@ -141,32 +192,52 @@
   <h5 class="vmox tm-35 bm-0">Mobile</h5>
   <p class="light-content larger lm-10 vmox">No Mobile View at This Time... </p>  
   
-   <h3 class="vmox tm-100 bm-0">Related Icons &amp; Images</h3>
-  <hr class="vMOX tm-0 bm-35"/>
-  <div class="image-row-wrapper">
-    <div class="image-row small bm-20">
-      <!--div class="col">
-        <img src="../img/relatedIconsAndImages/RecentActivityAndAlerts/LatestActivity/source_blue.png"/>
+  <h3 class="vmox tm-100 bm-0">Related Icons &amp; Images</h3>
+  <hr class="vMOX tm-0 bm-30"/>
+  <div class="image-row-wrapper tm-40">
+    <div class="image-row medium tm-40 bm-20">
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/Loading.gif"/>
       </div>
       <div class="col">
-        <img src="../img/relatedIconsAndImages/RecentActivityAndAlerts/LatestActivity/source_light_blue.png"/>
-      </div>
-      <div class="col transparent-image">
-        <img src="../img/relatedIconsAndImages/RecentActivityAndAlerts/LatestActivity/source_white.png"/>
-      </div-->
-      <div class="col">
-        <img src="../img/relatedIconsAndImages/RecentActivityAndAlerts/alert/256_db.png"/>
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_Calculator_1089666_2173a3.png"/>
       </div>
       <div class="col">
-        <img src="../img/relatedIconsAndImages/RecentActivityAndAlerts/alert/256_lb.png"/>
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_Calendar_1089667_2173a3.png"/>
       </div>
-      <div class="col transparent-image">
-        <img src="../img/relatedIconsAndImages/RecentActivityAndAlerts/alert/256_w.png"/>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_Calendar_1089667_2173a3_yellow.png"/>
       </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_chart_746400_005a8c.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_chart_746400_005a8c_disabled.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_Check_1812444_86c232.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_Check_998600_2173a3.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_Check_998600_2173a3_yellow.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_Delta_43529_000000.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_File_998558_005a8c.png"/>
+      </div>
+      <div class="col">
+        <img src="../img/relatedIconsAndImages/ExhibitAGeneration/noun_File_998558_005a8c_disabled.png"/>
+      </div>
+      
+      
     </div>
   </div>
   
-  <h3 class="vmox tm-150 bm-0 clear">Similar Components</h3>
+  <h3 class="vmox tm-400 bm-0 clear" style="margin-top: 450px">Similar Components</h3>
   <hr class="vMOX tm-0 bm-35"/>
   
   <p class="light-content larger lm-10 vmox">No Similar Components at This Time... </p>
